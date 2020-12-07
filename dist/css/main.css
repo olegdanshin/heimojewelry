@@ -1,0 +1,194 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  background-color: #0B0B0B;
+  font-size: 16px;
+  color: #ffffff; }
+
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0; }
+
+.nav-bar {
+  position: relative;
+  margin-top: 30px;
+  background-color: #0B0B0B;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.19);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.19);
+  padding: 33px 0 24px; }
+
+.logo {
+  width: 168px;
+  margin: auto; }
+  .logo .logo__img {
+    width: 100%; }
+  .logo .logo__slogan {
+    font-size: 19px;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 11px;
+    text-align: center;
+    color: #fff;
+    text-transform: lowercase;
+    letter-spacing: 0.3em;
+    text-decoration: none; }
+
+/* Hamburger Starts*/
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 45%;
+  right: 15px;
+  width: 30px;
+  height: 13px; }
+
+.hamburger__line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; }
+
+.hamburger__line:last-child {
+  margin: 0; }
+
+.hamburger.close .hamburger__line:first-child {
+  transform: translateY(6px) rotate(46deg);
+  -webkit-transform: translateY(6px) rotate(46deg);
+  -moz-transform: translateY(6px) rotate(46deg);
+  -ms-transform: translateY(6px) rotate(46deg);
+  -o-transform: translateY(6px) rotate(46deg); }
+
+.hamburger.close .hamburger__line:last-child {
+  transform: translateY(-5px) rotate(-46deg);
+  -webkit-transform: translateY(-5px) rotate(-46deg);
+  -moz-transform: translateY(-5px) rotate(-46deg);
+  -ms-transform: translateY(-5px) rotate(-46deg);
+  -o-transform: translateY(-5px) rotate(-46deg); }
+
+.cart-basket {
+  margin-top: 22px;
+  display: inline-flex;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 11px 23px 5px 23px; }
+  .cart-basket .cart-basket__icon {
+    margin-right: 8px; }
+  .cart-basket span {
+    margin: 0 7px; }
+
+.side-menu {
+  top: 83px;
+  left: 0;
+  width: 100%;
+  transform: translateY(-750px);
+  -webkit-transform: translateY(-750px);
+  -moz-transform: translateY(-750px);
+  -ms-transform: translateY(-750px);
+  -o-transform: translateY(-750px);
+  transition: all 0.9s ease;
+  -webkit-transition: all 0.9s ease;
+  -moz-transition: all 0.9s ease;
+  -ms-transition: all 0.9s ease;
+  -o-transition: all 0.9s ease; }
+
+.side-menu.show {
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -o-transform: translateY(0px);
+  z-index: 999; }
+
+.main-menu {
+  list-style: none; }
+  .main-menu .main-menu__link {
+    color: #d8d8d8;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    .main-menu .main-menu__link:hover {
+      color: #ffffff; }
+
+.hero-section {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+  .hero-section img {
+    max-width: 334px;
+    margin-left: 65px; }
+
+.hero-content .hero-content__title {
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 134%;
+  max-width: 358px; }
+
+.hero-content .hero-contentt__subtitle {
+  font-size: 19px;
+  margin-top: 24px;
+  line-height: 188%;
+  color: #D7D7D7;
+  max-width: 340px;
+  margin-bottom: 71px; }
+
+.hero-content .hero-content__btn {
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #d8d8d8;
+  cursor: pointer;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease; }
+  .hero-content .hero-content__btn .line {
+    width: 40px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-left: 20px; }
+  .hero-content .hero-content__btn:hover {
+    color: #fff; }
+
+/* Media viewport 7 */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none; }
+  .side-menu {
+    position: initial;
+    width: auto;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    overflow: hidden;
+    margin-top: 10px; }
+  .main-menu {
+    display: flex;
+    justify-content: center; }
+    .main-menu .main-menu__item {
+      margin-right: 47px; }
+    .main-menu :last-child {
+      margin-right: 0; } }
