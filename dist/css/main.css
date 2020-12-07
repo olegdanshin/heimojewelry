@@ -5,13 +5,15 @@ body {
   font-size: 16px;
   color: #ffffff; }
 
-p,
-ul,
 h1,
 h2,
 h3,
 h4,
 h5 {
+  font-weight: 600; }
+
+p,
+ul {
   margin: 0;
   padding: 0; }
 
@@ -118,6 +120,7 @@ h5 {
   .main-menu .main-menu__link {
     color: #d8d8d8;
     font-weight: 300;
+    text-transform: uppercase;
     text-decoration: none;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
@@ -137,15 +140,13 @@ h5 {
 .hero-content .hero-content__title {
   font-size: 52px;
   text-transform: uppercase;
-  line-height: 134%;
-  max-width: 358px; }
+  line-height: 134%; }
 
 .hero-content .hero-contentt__subtitle {
   font-size: 19px;
   margin-top: 24px;
   line-height: 188%;
   color: #D7D7D7;
-  max-width: 340px;
   margin-bottom: 71px; }
 
 .hero-content .hero-content__btn {
@@ -164,12 +165,62 @@ h5 {
   -o-transition: all 0.5s ease; }
   .hero-content .hero-content__btn .line {
     width: 40px;
-    height: 2px;
+    height: 1px;
     background-color: #fff;
     display: block;
     margin-left: 20px; }
   .hero-content .hero-content__btn:hover {
-    color: #fff; }
+    color: #fff;
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.507); }
+
+.section-futured {
+  margin-top: 100px; }
+
+.futured-title {
+  font-size: 29px;
+  text-transform: uppercase;
+  margin-bottom: 70px; }
+
+.card {
+  background-color: #0B0B0B;
+  margin-bottom: 50px; }
+  .card .card__img {
+    width: 100%; }
+  .card .card-text {
+    margin-top: 30px; }
+  .card .card-text__title {
+    font-size: 16px;
+    text-transform: uppercase; }
+  .card .card-text__sub {
+    color: #d8d8d8;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 23px; }
+  .card .card-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .card .card__basket {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 14px 0 14px;
+    background-color: #d8d8d8;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease; }
+    .card .card__basket .cart-basket__icon {
+      margin-right: 5px; }
+    .card .card__basket:hover {
+      background-color: #fff; }
 
 /* Media viewport 7 */
 @media screen and (min-width: 768px) {
